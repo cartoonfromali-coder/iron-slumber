@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bed Accessories | Iron & Slumber</title>
+  <meta name="description" content="Explore practical bed accessories and storage solutions from Iron & Slumber.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #111827;
+      --surface: #1f2937;
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --accent: #EA580C;
+      --border: #374151;
+      --max-width: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .page-wrap {
+      width: min(100% - 48px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .category-hero {
+      padding: 82px 0 64px;
+      text-align: center;
+      background: #172033;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+    }
+
+    .category-hero h1 {
+      margin: 0 auto 18px;
+      max-width: 760px;
+      font-size: clamp(42px, 6vw, 60px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.05;
+    }
+
+    .category-hero p {
+      max-width: 680px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .category-intro { padding: 62px 0 42px; }
+
+    .category-intro-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .category-intro h2,
+    .category-nav h2 {
+      margin: 0 0 16px;
+      line-height: 1.15;
+    }
+
+    .category-intro h2 { font-size: 34px; }
+
+    .category-intro p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .article-section { padding: 24px 0 72px; }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 760px);
+      justify-content: center;
+    }
+
+    .article-card {
+      padding: 34px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(234,88,12,.5);
+      box-shadow: 0 12px 30px rgba(0,0,0,.18);
+    }
+
+    .article-label {
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .article-card h3 {
+      margin: 0 0 14px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .article-card p {
+      margin: 0 0 25px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 18px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .read-more:hover {
+      background: #fff;
+      color: #111827;
+      transform: translateX(2px);
+    }
+
+    .category-nav {
+      padding: 48px 0 68px;
+      background: #172033;
+      border-top: 1px solid var(--border);
+    }
+
+    .category-nav h2 {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    .category-nav-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .category-nav-list a {
+      padding: 9px 16px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      transition: color .2s ease, border-color .2s ease;
+    }
+
+    .category-nav-list a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    @media (max-width: 760px) {
+      .page-wrap { width: min(100% - 32px, var(--max-width)); }
+      .category-hero { padding: 58px 0 48px; }
+      .category-hero h1 { font-size: 46px; }
+      .category-hero p { font-size: 14px; }
+      .category-intro { padding: 48px 0 32px; }
+      .category-intro h2 { font-size: 29px; }
+      .article-section { padding: 18px 0 54px; }
+      .article-card { padding: 27px 23px; }
+      .article-card h3 { font-size: 27px; }
+      .category-nav { padding: 40px 0 54px; }
+      .category-nav h2 { font-size: 28px; }
+      .category-nav-list { gap: 8px; }
+      .category-nav-list a { padding: 8px 13px; font-size: 11px; }
+    }
+
+    @media (max-width: 380px) {
+      .page-wrap { width: min(100% - 26px, var(--max-width)); }
+      .category-hero h1 { font-size: 40px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <main>
+    <section class="category-hero">
+      <div class="page-wrap">
+        <p class="eyebrow">Iron & Slumber</p>
+        <h1>Bed Accessories</h1>
+        <p>Functional bedroom additions designed around practical storage and everyday use.</p>
+      </div>
+    </section>
+
+    <section class="category-intro">
+      <div class="page-wrap">
+        <div class="category-intro-inner">
+          <h2>Look Beyond the Bed Frame</h2>
+          <p>The right accessory can provide useful storage while making the bedroom easier to organise and maintain.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-section">
+      <div class="page-wrap">
+        <div class="article-grid">
+          <article class="article-card">
+            <div class="article-label">Buying Guide</div>
+            <h3>What Should You Check When Buying an Ottoman Storage Box?</h3>
+            <p>Understand the practical construction details to check before choosing an ottoman storage box for regular bedroom use.</p>
+            <a class="read-more" href="what-to-check-before-buying-an-ottoman-storage-box.html">
+              Read Article <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-nav">
+      <div class="page-wrap">
+        <h2>Explore Bed Guides</h2>
+        <nav class="category-nav-list" aria-label="Bed categories">
+          <a href="divan-beds.html">Divan Beds</a>
+          <a href="padded-beds.html">Padded Beds</a>
+          <a href="ottoman-beds.html">Ottoman Beds</a>
+          <a href="mattresses.html">Mattresses</a>
+          <a href="kids-beds.html">Kids Beds</a>
+          <a href="bed-accessories.html">Bed Accessories</a>
+          <a href="custom-bed-builder.html">Custom Bed Builder</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+  <script src="header.js"></script>
+  <script src="footer.js"></script>
+</body>
+</html>
